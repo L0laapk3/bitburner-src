@@ -3816,9 +3816,6 @@ export interface Bladeburner {
    *
    * Attempts to join the Bladeburner division.
    *
-   * If you have SF 7.3, you will immediately receive "The Blade's Simulacrum" augmentation and won't be able to accept
-   * Stanek's Gift after joining. If you want to accept Stanek's Gift, you must do that before calling this API.
-   *
    * Returns true if you successfully join the Bladeburner division, or if you are already a member.
    *
    * Returns false otherwise.
@@ -4016,7 +4013,7 @@ export interface Gang {
   /**
    * Create a gang.
    * @remarks
-   * RAM cost: 1GB
+   * RAM cost: 1 GB
    *
    * Create a gang with the specified faction.
    * @returns True if the gang was created, false otherwise.
@@ -4026,7 +4023,7 @@ export interface Gang {
   /**
    * Check if you're in a gang.
    * @remarks
-   * RAM cost: 1GB
+   * RAM cost: 1 GB
    * @returns True if you're in a gang, false otherwise.
    */
   inGang(): boolean;
@@ -4722,12 +4719,12 @@ export interface Go {
    *
    * For example, a 5x5 board might look like this:
    *
-   [<br/>  
-      "XX.O.",<br/>  
-      "X..OO",<br/>  
-      ".XO..",<br/>  
-      "XXO.#",<br/>  
-      ".XO.#",<br/>  
+   [<br/>
+      "XX.O.",<br/>
+      "X..OO",<br/>
+      ".XO..",<br/>
+      "XXO.#",<br/>
+      ".XO.#",<br/>
    ]
    *
    * Each string represents a vertical column on the board, and each character in the string represents a point.
@@ -4748,12 +4745,12 @@ export interface Go {
    *
    * For example, a single 5x5 prior move board might look like this:
    *
-   [<br/>  
-      "XX.O.",<br/>  
-      "X..OO",<br/>  
-      ".XO..",<br/>  
-      "XXO.#",<br/>  
-      ".XO.#",<br/>  
+   [<br/>
+      "XX.O.",<br/>
+      "X..OO",<br/>
+      ".XO..",<br/>
+      "XXO.#",<br/>
+      ".XO.#",<br/>
    ]
    */
   getMoveHistory(): string[][];
@@ -6780,7 +6777,7 @@ export interface NS {
 
   /** Returns whether the player has access to the darkweb.
    * @remarks
-   * RAM cost: 0.05GB
+   * RAM cost: 0.05 GB
    *
    * @example
    * ```js
@@ -7465,7 +7462,7 @@ export interface NS {
   /**
    * Purchase a server.
    * @remarks
-   * 2.25 GB
+   * RAM cost: 2.25 GB
    *
    * Purchase a server with the specified hostname and amount of RAM.
    *
@@ -7537,7 +7534,7 @@ export interface NS {
   /**
    * Delete a purchased server.
    * @remarks
-   * 2.25 GB
+   * RAM cost: 2.25 GB
    *
    * Deletes one of your purchased servers, which is specified by its hostname.
    *
